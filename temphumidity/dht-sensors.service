@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitors the DHT sensor data
+After=networking.service
+Requires=network.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/local/bin/dht-monitor.py
+ExecStop=killall dht-monitor.py
+Restart=true
