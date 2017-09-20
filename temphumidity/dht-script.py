@@ -39,7 +39,7 @@ def main():
    # The A1 notation of the values to update.
    counter = 2
    range_ = 'A'+ str(counter)  # TODO: Update placeholder value.
-  
+
    # How the input data should be interpreted.
    value_input_option = 'RAW'  # TODO: Update placeholder value.
 
@@ -56,17 +56,17 @@ def main():
 
 		i = 0
                 RHD1B1, TD1B1 = getSensorData(dhtsAvailable[i])
-                i = i + 1
+                i += 1
                 RHD1B2, TD1B2 = getSensorData(dhtsAvailable[i])
-		i = i + 1
+		i += 1
 		RHD2B1, TD2B1 = getSensorData(dhtsAvailable[i])
-                i = i + 1
+                i += 1
 		RHD2B2, TD2B2 = getSensorData(dhtsAvailable[i])
-		i = i + 1
+		i += 1
                 RHD3B1, TD3B1 = getSensorData(dhtsAvailable[i])
-                i = i + 1
+                i += 1
                 RHD3B2, TD3B2 = getSensorData(dhtsAvailable[i])
-                i = i + 1
+                i += 1
 		currentDate = datetime.now(timeZone).strftime("%d/%m/%Y")
                 currentTime = datetime.now(timeZone).strftime("%I:%M:%S")
 		value_range_body = {
