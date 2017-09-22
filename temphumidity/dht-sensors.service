@@ -6,6 +6,9 @@ Requires=network.target
 [Service]
 Type=simple
 
-ExecStart=/usr/local/bin/dht-monitor.py
-ExecStop=killall dht-monitor.py
+User=root
+Group=root
+
+ExecStart=/usr/local/bin/dht-sensors.py
+ExecStop=killall dht-sensors.py
 Restart=true
