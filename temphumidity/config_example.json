@@ -1,0 +1,16 @@
+{
+	"sensors": [
+		{"batch_id": 1, "sensor_id": 12},
+		{"batch_id": 2, "sensor_id": 19},
+		{"batch_id": 3, "sensor_id": 16},
+		{"batch_id": 4, "sensor_id": 13},
+		{"batch_id": 5, "sensor_id": 5}
+	],
+
+	"dbhost": "localhost",
+	"dbuser": "postgres",
+	"dbname": "postgres",
+	"dbpassword": "postgres",
+
+	"fetch_delay": 10000
+}
